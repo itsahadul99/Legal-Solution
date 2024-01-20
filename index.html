@@ -23,7 +23,8 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        paragraph: '#707070',
+                        "bg-primary":'#B68C5A',
                     }
                 }
             }
@@ -41,14 +42,34 @@
 </head>
 
 <body>
-    <header>
-        <h1>Testing ..</h1>
+    <header class="container mx-auto px-5">
+        <!-- Navigation bar start here -->
+        <nav class="flex justify-between items-center py-12">
+            <div class="flex ">
+                <img class="w-1/2" src="./resources/images/logo.png" alt="">
+                <h1 class="text-3xl font-eb-garamond">Justify</h1>
+            </div>
+            <div class=" gap-8 text-paragraph font-poppins hidden md:hidden lg:flex">
+                <a class=" text-rose-600 hover:text-rose-500 duration-300" class="hover:text-rose-500 duration-300" href="#" >Home</a>
+                <a href="#">Services <i class="fa-solid fa-chevron-right"></i></a>
+                <a class="hover:text-rose-500 duration-300" href="#">Cases <i class="fa-solid fa-chevron-right"></i></a>
+                <a class="hover:text-rose-500 duration-300" href="#">Blog <i class="fa-solid fa-chevron-right"></i></a>
+                <a class="hover:text-rose-500 duration-300" href="#">Contact us <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+            <div class="font-poppins hidden md:hidden lg:flex ">
+                <button class="btn bg-bg-primary text-white text-[18px]">Free Consultation</button>
+            </div>
+            <div class="flex md:flex lg:hidden">
+                <img src="./resources/images/vector.png" alt="">
+            </div>
+        </nav>
+        <!-- Navigation bar end here -->
     </header>
     <main>
 
     </main>
     <footer>
-        
+
     </footer>
 </body>
 
